@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">About me</string>
+    <string name="nombre">Ronald Alejandro Vega</string>
+    <string name="carrera">Ingeniería Informática</string>
+    <string name="github">RonaldVega14</string>
+    <string name="correo">ronald.vega48@gmail.com</string>
+    <string name ="Info">Nombre: Ronald Alejandro Vega\n Carrera: Ingeniería Informática\n Github: RonaldVega14\n Twitter: RonaldVega14\n Gmail: ronald.vega48@gmail.com\n Whatsapp: (503) 6313-9711\n</string>
+</resources>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.marcelo.aboutme.MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:id="@+id/parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/foto"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:layout_margin="2dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimaryDark"
+            android:src="@drawable/me"/>
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:textSize="15sp"
+            android:text="@string/nombre"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/carrera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:textSize="15sp"
+            android:text="@string/carrera"
+            android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/twitterandgithub"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/github"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    android:src="@drawable/github"
+                    />
+
+                <TextView
+                    android:id="@+id/TVgithub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="@string/github"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/twitter"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    android:src="@drawable/twitter"
+                    >
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:id="@+id/TVtwitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="@string/github"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/correo"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    android:src="@drawable/gmail"
+                    />
+
+                <TextView
+                    android:id="@+id/TVgmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="@string/correo"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/telefono"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    android:src="@drawable/phone"
+                    />
+
+                <TextView
+                    android:id="@+id/TVwa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="(+503) 6313-9711"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Compartir"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/btncompartir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Compartir"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Power By: Ronald Vega"/>
+
+    </LinearLayout>
+
+</LinearLayout>
